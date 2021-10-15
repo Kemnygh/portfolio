@@ -2,6 +2,13 @@
   font-family:"Nunito", Helvetica, Arial, sans-serif;
 }
 
+html {
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+	background: #fff;
+}
+
 body {
 	font-size: 16px;
 	font-weight: 400;
@@ -10,12 +17,17 @@ body {
 	padding: 0;
 	/* display: none; */
 	background:#e4e7e9;
+  margin:0;
 }
 
+
+/* navbar */
 #navbar{
   text-align: center;
-  background:#ffffff;
+  /* background:#ffffff; */
   height: 80px;
+  position:fixed;
+  width:100%;
 }
 
 #navsub{
@@ -36,11 +48,10 @@ nav div#logo{
 nav div#logo a{
   font-family: "Poppins", sans-serif;
   color:darkslategray;
-}
-#menuitems{
+  text-decoration: none;
 }
 
-#navbar a{
+#navbar #menuitems a{
   text-decoration: none;
   margin: 0 20px;
   color:dimgrey;
@@ -48,10 +59,40 @@ nav div#logo a{
   
 }
 
-#navbar a:hover{
+#menuitems a:hover{
   color:darkorange
 }
 
-.social-icons{
+.social-icons i{
+  border: 1px solid darkorange;
+  border-radius: 100%;
+  padding: 12px 10px 8px 10px;
+	width: 20px;
+	height: 20px;
+  background:darkorange;
+  color:white;
   /* float:right; */
+}
+
+.social-icons i:hover{
+  border: 1px solid darkorange;
+  background:white;
+    color:darkorange;
+  /* float:right; */
+}
+
+.social-icons a{
+  margin:10px;
+  color:dimgrey;
+}
+
+
+/* content */
+#frontpage{
+  background: url(../images/cover.webp);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  height: 100vh;
+  width: 100%;
+ 
 }
