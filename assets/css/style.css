@@ -1,0 +1,57 @@
+*{
+  font-family:"Nunito", Helvetica, Arial, sans-serif;
+}
+
+body {
+	font-size: 16px;
+	font-weight: 400;
+	color: #515c6a;
+	line-height: 1.7em;
+	padding: 0;
+	/* display: none; */
+	background:#e4e7e9;
+}
+
+#navbar{
+  text-align: center;
+  background:#ffffff;
+  height: 80px;
+}
+
+#navsub{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+}
+
+nav div#logo{
+ 	height: 100%;
+	font-weight:bold;
+	font-size:24px;
+  margin: 0;	
+}
+
+nav div#logo a{
+  font-family: "Poppins", sans-serif;
+  color:darkslategray;
+}
+#menuitems{
+}
+
+#navbar a{
+  text-decoration: none;
+  margin: 0 20px;
+  color:dimgrey;
+  width:auto;
+  
+}
+
+#navbar a:hover{
+  color:darkorange
+}
+
+.social-icons{
+  /* float:right; */
+}
