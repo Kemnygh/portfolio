@@ -41,7 +41,8 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 80px;
-  margin: 0 15% 0 15%;
+  margin: 0 12% 0 12%;
+  
 }
 
 nav div#logo{
@@ -111,15 +112,33 @@ nav div#logo a{
   margin: 5px;
 }
 
+.salutation{
+  margin-bottom: 0px;
+}
 .salutation h4{
   font-family: "Poppins", sans-serif;  
   color:darkorange;
   font-weight:bold;
   font-size: 20px;
+  margin-bottom:0px;
 }
 
-.title{
+/* .title{
   font-size: 60px;
+  font-weight:900;
+  color:white;
+  margin:0;
+} */
+
+.title p{
+  font-size: 60px;
+  font-weight:900;
+  color:white;
+  margin:20px 0 30px 0;
+}
+
+.title p span{
+  font-size: 20px;
   font-weight:900;
   color:white;
 }
@@ -128,6 +147,7 @@ nav div#logo a{
   width:600px;
   text-align: center;
   color:white;
+  margin:0;
 }
 
 .button{
@@ -146,4 +166,125 @@ nav div#logo a{
 }
 
 
-/* welcome page ------------------------------------------------------------------*/
+/* about page ------------------------------------------------------------------*/
+
+#about{
+  background:#ffffff;
+  display:flex;
+  justify-content: center;
+
+}
+
+.sub-about{
+  padding-top: 80px;
+  display:grid;
+  grid-template-columns: 60% 40%;
+  grid-auto-rows:auto;
+  width: 1200px;
+  
+}
+
+.my-image{
+  grid-area: 60%;
+}
+
+.abt-statement{
+  grid-area: 40%;
+}
+
+.abt-statement p{
+  font-size: 13px;
+  text-align: justify;
+}
+
+.profile-bck{
+  border-radius: 7px;
+  height: 380px;
+  width: 580px;
+}
+
+.profile-img{
+  border-radius: 100%;
+  border: 1px solid darkorange;
+  height: 180px;
+  width: 180px;
+  margin-left: -100px;
+  margin-bottom: -70px;
+}
+
+.skills{
+  margin-top: 50px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+
+}
+
+.skill-name{
+  font-weight: bold;
+}
+
+.bar{
+  background-color: #efefef;
+  height: 7px;
+  border-radius: 7px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.bar-i{
+  width: 80%;
+  height: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color:darkorange;
+}
+
+.bar-ii{
+  width: 90%;
+  height: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color:darkorange;
+}
+.bar-iii{
+  width: 90%;
+  height: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color:darkorange;
+}
+
+.bar-iv{
+  width: 80%;
+  height: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color:darkorange;
+}
+.bar-v{
+  width: 60%;
+  height: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color:darkorange;
+}
+
+.bar-vi{
+  width: 70%;
+  height: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color:darkorange;
+}
+
+.sk-1i{
+   margin-bottom: 20px;
+}
+
+.skill-name{
+  padding-top:10px;
+  padding-top:10px;
+}
