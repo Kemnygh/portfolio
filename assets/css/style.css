@@ -2,6 +2,7 @@
   font-family:"Nunito", Helvetica, Arial, sans-serif;
 }
 
+/* global sytles ------------------------------------------------------------*/
 html {
 	overflow-x: hidden;
 	padding: 0;
@@ -10,12 +11,11 @@ html {
 }
 
 body {
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 400;
 	color: #515c6a;
 	line-height: 1.7em;
 	padding: 0;
-	/* display: none; */
 	background:#e4e7e9;
   margin:0;
   padding: 0;
@@ -23,7 +23,8 @@ body {
 }
 
 
-/* navbar */
+
+/* navbar ------------------------------------------------------------*/
 #navbar{
   text-align: center;
   background:#ffffff;
@@ -34,15 +35,13 @@ body {
   top:0;
 }
 
-
-
-
 #navsub{
   display:flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   height: 80px;
+  margin: 0 15% 0 15%;
 }
 
 nav div#logo{
@@ -66,7 +65,7 @@ nav div#logo a{
   
 }
 
-#menuitems a:hover{
+#navbar #menuitems a:hover{
   color:darkorange
 }
 
@@ -78,14 +77,14 @@ nav div#logo a{
 	height: 15px;
   background:darkorange;
   color:white;
-  /* float:right; */
+
 }
 
 .social-icons i:hover{
   border: 1px solid darkorange;
   background:white;
     color:darkorange;
-  /* float:right; */
+
 }
 
 .social-icons a{
@@ -94,11 +93,10 @@ nav div#logo a{
 }
 
 
-/* content */
-#frontpage{
+/* welcome page ------------------------------------------------------------------*/
+#welcomepage{
   background:  linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),url(../images/cover2.webp);
   background-size: cover;
-  /* background-repeat: no-repeat; */
   height: 100vh;
   width: 100%;
 }
@@ -146,3 +144,6 @@ nav div#logo a{
 .about{
   margin: 0;
 }
+
+
+/* welcome page ------------------------------------------------------------------*/
