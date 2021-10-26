@@ -400,4 +400,25 @@ nav div#logo a{
   height: 250px;
   background-attachment: fixed;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ad-details{
+  text-align: center;
+}
+
+.ad-details p{
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+}
+.ad-details a{
+  text-decoration: none;
+  color: white;
+  padding: 8px 30px 8px 30px;
+  border-radius: 5px;
+  background-color:darkorange;
 }
