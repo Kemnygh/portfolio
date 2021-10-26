@@ -310,10 +310,19 @@ nav div#logo a{
 }
 
 /* Portfolio page ------------------------------------------------------------------*/
+#portfolio{
+  width: 1200px;
+  height: auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .p-intro{
   justify-content: center;
   display:flex;
+  flex: 1;
   flex-wrap: wrap;
   margin-top: 80px;
   width: 100%;
@@ -328,4 +337,14 @@ nav div#logo a{
 .p-intro p{
   text-align: center;
   width: 500px;
+}
+
+.projects{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.proj{
+  margin: 0 20px 0 20px;
 }
