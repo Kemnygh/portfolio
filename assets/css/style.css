@@ -23,13 +23,18 @@ body {
 }
 
 h1{
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -1px;
+    
     font-family: "Poppins", sans-serif;
-    color: #35404e;
+}
+
+h1{
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  font-family: "Poppins", sans-serif;
+  color: #35404e;
 }
 
 
@@ -224,6 +229,7 @@ nav div#logo a{
 
 .skills{
   margin-top: 50px;
+  margin-bottom: 70px;
   grid-column-start: 1;
   grid-column-end: 3;
   display: flex;
@@ -311,21 +317,19 @@ nav div#logo a{
 
 /* Portfolio page ------------------------------------------------------------------*/
 #portfolio{
-  width: 1200px;
-  height: auto;
+
   display:flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding-bottom: 70px;
 }
 
 .p-intro{
   justify-content: center;
   display:flex;
-  flex: 1;
   flex-wrap: wrap;
-  margin-top: 80px;
-  width: 100%;
+  margin-top: 70px;
+  width: 1200px;
   height:auto;
 }
 
@@ -343,8 +347,47 @@ nav div#logo a{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  width: 1200px;
+  height: auto;
 }
 
 .proj{
   margin: 0 20px 0 20px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.proj-icon{
+  margin-right: 10px;
+  color: darkorange;
+  border: 1px solid darkorange;
+  padding: 15px 22px 15px 22px;
+  /* box-sizing: border-box; */
+  border-radius: 100%;
+}
+
+.fa-desktop {
+  padding: 22px 20px 22px 20px;
+}
+
+.proj-details{
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  text-align: justify;
+}
+
+.proj-details p{
+  text-align: justify;
+  font-size: 13px;
+}
+
+.proj-details a{
+  text-decoration: none;
+  color: darkorange;
+  font-weight: bold;
 }
