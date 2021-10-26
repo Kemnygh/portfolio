@@ -392,6 +392,7 @@ nav div#logo a{
   color: darkorange;
   font-weight: bold;
 }
+
 /* ad section ------------------------------------------------------------------*/
 
 #ad{
@@ -414,6 +415,7 @@ nav div#logo a{
   font-size: 40px;
   font-weight: 900;
   color: white;
+  margin-bottom: 30px;
 }
 .ad-details a{
   text-decoration: none;
@@ -421,4 +423,99 @@ nav div#logo a{
   padding: 8px 30px 8px 30px;
   border-radius: 5px;
   background-color:darkorange;
+  
+}
+
+/* contact section ------------------------------------------------------------------*/
+
+#contact{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.c-all-items{
+  margin-top: 70px;
+  width: 1200px;
+}
+
+.c-intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.c-intro p{
+  width: 500px;
+}
+
+.c-capture{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.c-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 150px;
+  margin: 10px;
+}
+
+.c-message{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+#name, #email, #phone{
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #dddbdb;
+}
+
+#message{
+  height: 145px;
+  border-radius: 5px;
+  border: 1px solid #dddbdb;
+}
+
+.submit{
+  margin: 10px;
+  align-items: center;
+  float:right;
+  color: white;
+  padding: 8px 30px 8px 30px;
+  border-radius: 5px;
+  background-color:darkorange;
+  border: none;
+}
+
+.submit:hover{
+  cursor: pointer;
+  background-color: goldenrod;
+}
+
+.contact-info{
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.contact-items i, h4, p{
+  text-align: center;
+  display: block;
+  margin: 10px;
+  
+}
+
+.contact-items i, h4{
+  color: darkorange;
 }
