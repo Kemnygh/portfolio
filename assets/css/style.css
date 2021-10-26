@@ -437,6 +437,7 @@ nav div#logo a{
 
 .c-all-items{
   margin-top: 70px;
+  margin-bottom: 70px;
   width: 1200px;
 }
 
@@ -518,4 +519,27 @@ nav div#logo a{
 
 .contact-items i, h4{
   color: darkorange;
+}
+
+/* contact section ------------------------------------------------------------------*/
+
+#footer{
+  background-color: #35404e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.footer-items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1200px;
+  padding: 20px 0 20px 0;
+}
+
+.copyr{
+  color: white;
 }
