@@ -117,6 +117,16 @@ nav div#logo a{
   width: 100%;
 }
 
+.sidemenu{
+  padding-top: 80px;
+  text-decoration: none;
+  float: left;
+}
+
+.sidemenu ul{
+  list-style: none;
+}
+
 .layer{
   display:flex;
   flex-direction: column;
