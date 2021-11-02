@@ -39,47 +39,107 @@ h1{
 
 /* media queries ------------------------------*/
 
-.sidemenu{
-  padding-top: 80px;
-  float: left;
-  position: fixed;
+@media screen and (max-width: 600px){
+  .sidemenu{
+    padding-top: 80px;
+    float: left;
+    position: fixed;
+    
+  }
   
+  .sidemenu ul{
+    list-style: none;
+    background-color: rgb(255, 255, 255,0.8);
+    margin-left: 10px;
+    width: 60px;
+    padding-left: 5px;
+    border-radius: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .sidemenu ul li{
+    margin-right: 20px;
+    border-bottom: 1px solid darkorange;
+    margin: 5px 5px 5px 0;
+  }
+  
+  .sidemenu a{
+    text-decoration: none;
+    color:dimgrey; 
+  }
+  
+  .sidemenu a:hover{
+    text-decoration: none;
+    color:darkorange; 
+  }
+  
+  .side-icons{
+    margin-left: auto;
+  }
+  
+  .side-icons ul{
+   
+   list-style: none;
+  
+
+  }
+  
+  .side-icons i{
+    border: 1px solid darkorange;
+    border-radius: 100%;
+    padding: 12px 10px 8px 10px;
+    width: 15px;
+    height: 15px;
+    background:darkorange;
+    color:white;
+  
+  }
+  
+  .side-icons i:hover{
+    border: 1px solid darkorange;
+    background:white;
+      color:darkorange;
+  
+  }
+  
+  .side-icons a{
+    margin:10px;
+    color:dimgrey;
+  }
+  
+  .profile-bck{
+    visibility: hidden;
+  }
+
+  .sub-about{
+    flex-wrap: wrap;
+  
+  }
+
+  #navbar{
+    visibility: hidden;
+  }
+  #footer{
+    visibility: hidden;
+  }
 }
 
-.sidemenu ul{
-  list-style: none;
-  background-color: rgb(255, 255, 255,0.8);
-  margin-left: 10px;
-  width: 60px;
-  padding-left: 5px;
-  border-radius: 5px;
-  padding-bottom: 5px;
+/* @media screen and (max-width: 750px){
+.s-title{
+  font-family: "Poppins", sans-serif;  
+  font-weight: 300;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 25px;
+  line-height: 1.7em;
 }
 
-.sidemenu ul li{
-  margin-right: 20px;
-  border-bottom: 1px solid darkorange;
-  margin: 5px 5px 5px 0;
+.skill-combi{
+  
+  width: 100%;
 }
+} */
 
-.sidemenu a{
-  text-decoration: none;
-  color:dimgrey; 
-}
-
-.sidemenu a:hover{
-  text-decoration: none;
-  color:darkorange; 
-}
-
-.side-icons{
-   margin-left: auto;
-}
-
-.side-icons ul{
-  margin-left: auto;
-  list-style: none;
-}
 
 /* navbar ------------------------------*/
 #navbar{
@@ -99,7 +159,7 @@ h1{
   justify-content: space-between;
   align-items: center; 
   height: 80px;
-  width: 1200px;
+  max-width: 1200px;
   margin:auto;
 }
 
@@ -167,7 +227,7 @@ nav div#logo a{
   align-items: center;
   width: inherit;
   height: 60%;
-  margin: 5px;
+  margin: 0px;
 }
 
 .salutation{
@@ -202,10 +262,15 @@ nav div#logo a{
 }
 
 .brief{
-  width:600px;
+  max-width:600px;
   text-align: center;
   color:white;
   margin:0;
+}
+
+.brief p{
+  padding :10;
+  margin: 0;
 }
 
 .button{
@@ -229,25 +294,45 @@ nav div#logo a{
 #about{
   background:#ffffff;
   display:flex;
+  flex-wrap: wrap;
   justify-content: center;
 
 }
 
 .sub-about{
   padding-top: 80px;
-  display:grid;
-  grid-template-columns: 60% 40%;
-  grid-auto-rows:auto;
-  width: 1200px;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 1200px;
+  
+}
+
+.profile{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
   
 }
 
 .my-image{
-  grid-area: 60%;
+  position: relative;
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .abt-statement{
-  grid-area: 40%;
+  flex: 1;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: 8.333333%;
 }
 
 .abt-statement p{
@@ -257,35 +342,44 @@ nav div#logo a{
 
 .profile-bck{
   border-radius: 7px;
-  height: 380px;
-  width: 580px;
+  max-width: 100%;
+  height: auto;
+  
 }
 
 .profile-img{
-  border-radius: 100%;
-  border: 2px solid darkorange;
-  height: 180px;
-  width: 180px;
-  margin-left: -100px;
-  margin-bottom: 95px;
+  border-radius: 10px;
+  border: 2px solid darkorange;  
+  position: absolute;
+  width: 20%;
+  height: 30%;
+  right: -10%;
+  bottom: -10%;
+  z-index: 1;
 }
 
 .skills{
   margin-top: 50px;
   margin-bottom: 70px;
-  grid-column-start: 1;
-  grid-column-end: 3;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content:space-between;
 }
 
 .s-title{
   font-family: "Poppins", sans-serif;  
   font-weight: 300;
+  font-weight: bold;
   font-size: 14px;
   margin-top: 25px;
   line-height: 1.7em;
+  flex: 1;
+}
+
+.skill-combi{
+  
+  flex: 2;
 }
 
 .skill-name{
@@ -304,7 +398,7 @@ nav div#logo a{
   background-color: #efefef;
   height: 7px;
   border-radius: 7px;
-  width: 300px;
+  max-width: 300px;
   margin-bottom: 10px;
 }
 
@@ -370,10 +464,8 @@ nav div#logo a{
 
 .p-intro{
   justify-content: center;
-  display:flex;
-  flex-wrap: wrap;
   margin-top: 70px;
-  width: 1200px;
+  max-width: 1200px;
   height:auto;
 }
 
@@ -384,14 +476,15 @@ nav div#logo a{
 
 .p-intro p{
   text-align: center;
-  width: 500px;
+  max-width: 500px;
 }
 
 .projects{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 1200px;
+  max-width: 1200px;
   height: auto;
 }
 
@@ -475,13 +568,14 @@ nav div#logo a{
   background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .c-all-items{
   margin-top: 70px;
   margin-bottom: 70px;
-  width: 1200px;
+  max-width: 1200px;
+  margin-left: 15%;
 }
 
 .c-intro{
@@ -491,16 +585,18 @@ nav div#logo a{
 }
 
 .c-intro p{
-  width: 500px;
+  max-width: 500px;
 }
 
 .c-capture{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .c-details{
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -510,6 +606,7 @@ nav div#logo a{
 }
 
 .c-message{
+  flex: 1;
   display: flex;
   flex-direction: column;
   margin: 10px;
@@ -548,6 +645,7 @@ nav div#logo a{
 .contact-info{
   margin-top: 70px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
@@ -564,22 +662,25 @@ nav div#logo a{
   color: darkorange;
 }
 
-/* contact section ------------------------------------------------------------------*/
+
+/* footer section ------------------------------------------------------------------*/
 
 #footer{
   background-color: #35404e;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-content: space-between;
+  align-items: stretch;
   height: 100px;
 }
 
 .footer-items{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  width: 1200px;
+  max-width: 1200px;
+  margin-left: 15%;
   padding: 20px 0 20px 0;
 }
 
