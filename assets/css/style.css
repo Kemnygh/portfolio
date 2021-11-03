@@ -38,12 +38,20 @@ h1{
 }
 
 /* media queries ------------------------------*/
-
-@media screen and (max-width: 600px){
+@media screen and (min-width: 800px){
   .sidemenu{
-    padding-top: 80px;
+    visibility:hidden;
+  }
+  .side-icons{
+    visibility:hidden;
+  }
+}
+@media screen and (max-width: 800px){
+  
+  .sidemenu{
     float: left;
     position: fixed;
+   
     
   }
   
@@ -107,9 +115,9 @@ h1{
     color:dimgrey;
   }
   
-  .profile-bck{
+  /* .profile-bck{
     visibility: hidden;
-  }
+  } */
 
   .sub-about{
     flex-wrap: wrap;
@@ -356,6 +364,7 @@ nav div#logo a{
   right: -10%;
   bottom: -10%;
   z-index: 1;
+  animation-name: fadeInLeft;
 }
 
 .skills{
