@@ -21,12 +21,13 @@ The purpose of the website is to highlight and elavate the portfolio of Kemuel a
 
 ## Technologies Used
 * Website purely uses only HTML and CSS for rendering
-* CSS propeties like z-index and flex-wrap were used to help overlay and wrap objects nicely 
+* CSS propeties like z-index and flex-wrap were used to help overlay and wrap objects nicely and ordely e.g. the two photos under the about section.
+* Created a vertical navigation with HTML & CSS nmedia query property and no javascript (activates at 800px or less)
 
 ## Support and contact details
-{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}
+For any issues, questions, ideas or concerns please contact me through email kemnygh@gmail.com, you can also make a contribution to improve the code.
 
 ### License
 *{Determine the license under which this application can be used.  See below for more details on licensing.}*
 
-Copyright (c) {year} **{List of contributors or company name}**
+Copyright (c) 2021 **{List of contributors or company name}**
