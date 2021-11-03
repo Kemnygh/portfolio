@@ -28,6 +28,6 @@ The purpose of the website is to highlight and elavate the portfolio of Kemuel a
 For any issues, questions, ideas or concerns please contact me through email kemnygh@gmail.com, you can also make a contribution to improve the code.
 
 ### License
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+Licensed under the MIT license, free software license.
 
-Copyright (c) 2021 **{List of contributors or company name}**
+Copyright (c) 2021 Kemuel Nalifuma
