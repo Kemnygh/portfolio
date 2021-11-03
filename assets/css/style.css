@@ -42,9 +42,11 @@ h1{
   .sidemenu{
     visibility:hidden;
   }
+
   .side-icons{
     visibility:hidden;
   }
+
   .profile{
     display:flex;
     flex-direction: row;
@@ -67,8 +69,7 @@ h1{
   .sidemenu{
     float: left;
     position: fixed;
-   
-    
+    z-index: 1;
   }
   
   .sidemenu ul{
@@ -102,10 +103,7 @@ h1{
   }
   
   .side-icons ul{
-   
    list-style: none;
-  
-
   }
   
   .side-icons i{
@@ -133,7 +131,6 @@ h1{
   
  .sub-about{
     flex-wrap: wrap;
-  
   }
 
   .profile{
@@ -143,6 +140,7 @@ h1{
   #navbar{
     visibility: hidden;
   }
+
   #footer{
     visibility: hidden;
   }
@@ -158,21 +156,6 @@ h1{
   }
 }
 
-/* @media screen and (max-width: 750px){
-.s-title{
-  font-family: "Poppins", sans-serif;  
-  font-weight: 300;
-  font-weight: bold;
-  font-size: 14px;
-  margin-top: 25px;
-  line-height: 1.7em;
-}
-
-.skill-combi{
-  
-  width: 100%;
-}
-} */
 
 
 /* navbar ------------------------------*/
@@ -184,7 +167,7 @@ h1{
   width:100%;
   margin: 0;
   top:0;
- 
+  z-index: 2;
 }
 
 #navsub{
@@ -215,7 +198,6 @@ nav div#logo a{
   margin: 0 20px;
   color:dimgrey;
   width:auto;
-  
 }
 
 #navbar #menuitems a:hover{
@@ -230,14 +212,12 @@ nav div#logo a{
 	height: 15px;
   background:darkorange;
   color:white;
-
 }
 
 .social-icons i:hover{
   border: 1px solid darkorange;
   background:white;
-    color:darkorange;
-
+  color:darkorange;
 }
 
 .social-icons a{
@@ -312,6 +292,7 @@ nav div#logo a{
   color:white;
   text-decoration:none;
 }
+
 .about{
   margin: 0;
 }
@@ -326,7 +307,6 @@ nav div#logo a{
     padding-right: 15px;
     padding-left: 15px;
     margin-left: 8.333333%;
-    
   }
   
   .profile-img{
@@ -356,7 +336,6 @@ nav div#logo a{
     margin-top: 20px;
     padding-right: 15px;
     padding-left: 15px;
-    
   }
   
   .profile-img{
@@ -383,7 +362,6 @@ nav div#logo a{
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .sub-about{
@@ -392,8 +370,8 @@ nav div#logo a{
   flex-wrap: wrap;
   flex-direction: column;
   max-width: 1200px;
-  
 }
+
 .abt-statement p{
   font-size: 13px;
   text-align: justify;
@@ -405,7 +383,6 @@ nav div#logo a{
   height: auto;
   margin-right: 15px;
 }
-
 
 .s-title{
   font-family: "Poppins", sans-serif;  
@@ -457,6 +434,7 @@ nav div#logo a{
   border-bottom-left-radius: 7px;
   background-color:darkorange;
 }
+
 .bar-iii{
   width: 90%;
   height: 7px;
@@ -472,6 +450,7 @@ nav div#logo a{
   border-bottom-left-radius: 7px;
   background-color:darkorange;
 }
+
 .bar-v{
   width: 60%;
   height: 7px;
@@ -495,7 +474,6 @@ nav div#logo a{
 /* Portfolio section ------------------------------------------------------------------*/
 
 #portfolio{
-
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -541,7 +519,6 @@ nav div#logo a{
   color: darkorange;
   border: 1px solid darkorange;
   padding: 15px 22px 15px 22px;
-  /* box-sizing: border-box; */
   border-radius: 100%;
 }
 
@@ -593,13 +570,13 @@ nav div#logo a{
   color: white;
   margin-bottom: 30px;
 }
+
 .ad-details a{
   text-decoration: none;
   color: white;
   padding: 8px 30px 8px 30px;
   border-radius: 5px;
   background-color:darkorange;
-  
 }
 
 /* contact section ------------------------------------------------------------------*/
@@ -608,14 +585,12 @@ nav div#logo a{
   background-color: white;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 }
 
 .c-all-items{
   margin-top: 70px;
   margin-bottom: 70px;
   max-width: 1200px;
-  
 }
 
 .c-intro{
